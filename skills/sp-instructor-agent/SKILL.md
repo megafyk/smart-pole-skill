@@ -1,5 +1,5 @@
 ---
-name: smart-pole-instructor
+name: sp-instructor-agent
 description: Use when a user provides a vague prompt and needs structured clarification to produce a precise master prompt.
 ---
 

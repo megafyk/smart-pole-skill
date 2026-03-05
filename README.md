@@ -51,18 +51,18 @@ Skill này được xây dựng thông qua quy trình **Reverse Engineering** (D
 ## ⚡ Quick Start / Bắt Đầu Nhanh
 **English**:
 1. **Pick a mode**:
-   - **Instructor** (learn + iterate): `skills/smart-pole-instructor/`.
-   - **Chat Enforcer** (custom chat-agent workflow): `skills/smart-pole-chat-enforcer/`.
-   - **Coding Agent** (code tasks): `skills/smart-pole-coding-agent/`.
+   - **Instructor** (learn + iterate): `skills/sp-instructor-agent/`.
+   - **Chat Enforcer** (custom chat-agent workflow): `skills/sp-chat-agent/`.
+   - **Coding Agent** (code tasks): `skills/sp-coding-agent/`.
 2. **Load the prompt** into your tool's system/custom instructions.
 3. **Start with a vague request** and let SMART POLE ask for missing atoms.
 4. **Platform notes**: See `docs/compatibility.md` for tool-specific loading tips.
 
 **Tiếng Việt**:
 1. **Chọn chế độ**:
-   - **Instructor** (học + tinh chỉnh): `skills/smart-pole-instructor/`.
-   - **Chat Enforcer** (workflow cho chat-agent): `skills/smart-pole-chat-enforcer/`.
-   - **Coding Agent** (tác vụ lập trình): `skills/smart-pole-coding-agent/`.
+   - **Instructor** (học + tinh chỉnh): `skills/sp-instructor-agent/`.
+   - **Chat Enforcer** (workflow cho chat-agent): `skills/sp-chat-agent/`.
+   - **Coding Agent** (tác vụ lập trình): `skills/sp-coding-agent/`.
 2. **Nạp prompt** vào phần system/custom instructions của công cụ.
 3. **Bắt đầu bằng yêu cầu mơ hồ** và để SMART POLE hỏi thêm các atom còn thiếu.
 4. **Ghi chú nền tảng**: Xem `docs/compatibility.md` để biết cách nạp cho từng công cụ.
@@ -70,9 +70,9 @@ Skill này được xây dựng thông qua quy trình **Reverse Engineering** (D
 ---
 
 ## 📦 Skill Package Layout
-- `skills/smart-pole-instructor/`: Instructor skill (`SKILL.md` + `agents/openai.yaml`)
-- `skills/smart-pole-chat-enforcer/`: Chat Enforcer skill (`SKILL.md` + `agents/openai.yaml`)
-- `skills/smart-pole-coding-agent/`: Coding Agent skill (`SKILL.md` + `agents/openai.yaml`)
+- `skills/sp-instructor-agent/`: Instructor skill (`SKILL.md` + `agents/openai.yaml`)
+- `skills/sp-chat-agent/`: Chat Enforcer skill (`SKILL.md` + `agents/openai.yaml`)
+- `skills/sp-coding-agent/`: Coding Agent skill (`SKILL.md` + `agents/openai.yaml`)
 
 ---
 
@@ -88,7 +88,7 @@ This project provides three modes of operation. Choose the one that fits your wo
 - *Phù hợp cho*: Người mới bắt đầu muốn học cách viết prompt hoặc tinh chỉnh thủ công. AI sẽ đóng vai giáo viên hướng dẫn.*
 
 ### 2. Chat Enforcer Mode (Workflow) / Chế độ Chat Enforcer (Quy trình)
-- **File**: `skills/smart-pole-chat-enforcer/SKILL.md`
+- **File**: `skills/sp-chat-agent/SKILL.md`
 - **Focus**: Automation & Strictness.
 - **Best for**: Custom chat-agent workflows (Custom GPTs, Gemini Gems) or "Gatekeeper" steps before downstream execution.
 - **Usage**: The AI will **NOT** output the result until it detects a perfect prompt. It ends with a machine-readable XML block:
@@ -98,7 +98,7 @@ This project provides three modes of operation. Choose the one that fits your wo
 - *Phù hợp cho*: Workflow chat-agent (Custom GPT, Gemini Gem). AI sẽ **KHÔNG** nhả kết quả cho đến khi prompt hoàn hảo. Nó sẽ kết thúc bằng block XML để máy có thể đọc.*
 
 ### 3. Coding Agent Mode (v4.0 — NEW) / Chế độ Coding Agent
-- **File**: `skills/smart-pole-coding-agent/SKILL.md`
+- **File**: `skills/sp-coding-agent/SKILL.md`
 - **Focus**: AI Coding Agents (OpenAI Codex, Anthropic Claude Code, Google Gemini Code Assist).
 - **Best for**: Coding tasks where the agent operates on a codebase — editing files, running tests, using terminal.
 - **Usage**: Load the skill into your coding agent. It will auto-extract context from project configs and apply a strict 7-step execution workflow: `ORIENT → CLASSIFY → EXTRACT → DETECT FLAWS → PLAN → EXECUTE → VERIFY`.

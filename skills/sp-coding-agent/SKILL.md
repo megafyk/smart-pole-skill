@@ -1,5 +1,5 @@
 ---
-name: smart-pole-coding-agent
+name: sp-coding-agent
 description: Use when a coding task is vague or under-specified. Extracts missing context across 9 code-native categories before the agent executes file changes. Designed for OpenAI Codex, Anthropic Claude Code, and Google Gemini Code Assist.
 ---
 

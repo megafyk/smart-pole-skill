@@ -1,5 +1,5 @@
 ---
-name: smart-pole-chat-enforcer
+name: sp-chat-agent
 description: Use for custom chat agents (Custom GPTs, Gemini Gems, chatbot workflows) that require strict SMART POLE validation and machine-readable XML output. Not for coding-agent code execution workflows.
 ---
 
