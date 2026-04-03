@@ -1,0 +1,6 @@
+[submodule "skills/skills"]
+	path = skills/skills
+	url = git@github.com:huytd/skills.git
+[submodule "skills/custom"]
+	path = skills/custom
+	url = http://bitbucket.digital.vn/scm/cds/agent-skills.git
